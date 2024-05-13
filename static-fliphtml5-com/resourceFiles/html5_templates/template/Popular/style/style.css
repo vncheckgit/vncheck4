@@ -69,8 +69,9 @@
      display: block;
      overflow: hidden;
      background-image: url('/files/shot.png'); /* Replace 'your-image-path.jpg' with the path to your image */
-     background-size: cover; /* Adjust the background size as needed */
+     background-size: contain; /* Adjust the background size as needed */
      background-position: center; /* Center the background image */
+     background-repeat: no-repeat;
  }
 
  img {
