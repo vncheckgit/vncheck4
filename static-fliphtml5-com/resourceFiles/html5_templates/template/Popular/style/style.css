@@ -74,13 +74,6 @@
      background-size: cover;
  }
 
- /* Media query for full screen */
- @media screen and (min-aspect-ratio: 16/9) {
-     .bookContainer {
-         background-size: contain;
-     }
- }
-
 
  img {
      -webkit-user-drag: none;
