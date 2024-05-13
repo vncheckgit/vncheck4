@@ -68,11 +68,28 @@
      left: 0;
      display: block;
      overflow: hidden;
-     background-image: url('/files/shot.jpg');
      background-repeat: no-repeat;
      background-position: center;
-     background-size: contain;
  }
+
+ /* Định nghĩa background image khi tỉ lệ màn hình > 16:9 */
+ @media screen and (min-aspect-ratio: 16/9) {
+     .bookContainer {
+         background-image: url('/files/shot2.jpg');
+         background-size: cover;
+         /* hoặc contain tùy thuộc vào nhu cầu */
+     }
+ }
+
+ /* Định nghĩa background image khi tỉ lệ màn hình là 16:9 */
+ @media screen and (max-aspect-ratio: 16/9) {
+     .bookContainer {
+         background-image: url('/files/shot.jpg');
+         background-size: cover;
+         /* hoặc cover tùy thuộc vào nhu cầu */
+     }
+ }
+
 
 
  img {
