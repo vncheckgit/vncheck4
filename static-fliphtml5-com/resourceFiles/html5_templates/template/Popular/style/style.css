@@ -68,11 +68,19 @@
      left: 0;
      display: block;
      overflow: hidden;
-     background-image: url('/files/shot.png'); /* Replace 'your-image-path.jpg' with the path to your image */
-     background-size: contain; /* Adjust the background size as needed */
-     background-position: center; /* Center the background image */
+     background-image: url('/files/shot.png');
      background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
  }
+
+ /* Media query for full screen */
+ @media screen and (min-aspect-ratio: 16/9) {
+     .bookContainer {
+         background-size: contain;
+     }
+ }
+
 
  img {
      -webkit-user-drag: none;
